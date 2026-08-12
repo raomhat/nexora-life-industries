@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b3d91">
+  <title>Nexora Life Industries | Pure Water, Better Lives</title>
+  <meta name="description" content="Nexora Life Industries — quality drinking water and everyday essentials.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <span class="brand-mark">NL</span>
+        <span><strong>NEXORA <em>LIFE</em></strong><small>INDUSTRIES</small></span>
+      </a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <nav id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">PURE TODAY • HEALTHIER TOMORROW</p>
+          <h1>Quality Water.<br><span>Better Lives.</span></h1>
+          <p class="lead">Fresh, clean and reliable drinking water for homes, businesses and everyday life.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#order">Order Now</a>
+            <a class="btn secondary" href="#products">View Products</a>
+          </div>
+          <div class="trust-row">
+            <span>✓ Quality Focused</span>
+            <span>✓ Hygienic</span>
+            <span>✓ Reliable Delivery</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="water-orb"></div>
+          <div class="bottle bottle-large">
+            <div class="cap"></div><div class="bottle-body">
+              <div class="label"><b>NEXORA</b> <i>LIFE</i><small>MINERAL WATER</small></div>
+            </div>
+          </div>
+          <div class="splash splash-a"></div><div class="splash splash-b"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">OUR PRODUCTS</p>
+          <h2>Choose what you need</h2>
+          <p>Prices below are for the complete pack/can as specified.</p>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section soft">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">NEXORA LIFE INDUSTRIES</p>
+          <h2>Everyday essentials for better life.</h2>
+          <p>We focus on dependable products, hygienic handling and convenient delivery. Our goal is simple: make quality essentials easier to access.</p>
+          <div class="feature-grid">
+            <div><b>💧 Beverages</b><span>Pure water for every moment</span></div>
+            <div><b>🏠 Home Care</b><span>Better convenience for your home</span></div>
+            <div><b>🫧 Hygiene</b><span>Clean water, healthy life</span></div>
+            <div><b>🌿 Wellness</b><span>For a healthier you</span></div>
+          </div>
+        </div>
+        <div class="quote-card">
+          <div class="quote-mark">“</div>
+          <h3>Quality. Trust. Care. Always.</h3>
+          <p>Our promise is to keep improving the experience from product to delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="section order-section">
+      <div class="container order-grid">
+        <div>
+          <p class="eyebrow">QUICK ORDER</p>
+          <h2>Place your order</h2>
+          <p>Select a product, choose quantity and enter your details. The order summary is generated automatically.</p>
+          <div class="order-note">💡 For wholesale or large-volume orders, mention the quantity in the notes.</div>
+        </div>
+        <form id="orderForm" class="order-card">
+          <label>Product
+            <select id="product" required></select>
+          </label>
+          <label>Quantity
+            <input id="quantity" type="number" min="1" value="1" required>
+          </label>
+          <label>Your Name
+            <input id="customerName" type="text" placeholder="Enter your name" required>
+          </label>
+          <label>Phone Number
+            <input id="phone" type="tel" placeholder="03XX XXXXXXX" required>
+          </label>
+          <label>Delivery Address
+            <textarea id="address" rows="3" placeholder="Village / city / complete address" required></textarea>
+          </label>
+          <label>Notes (optional)
+            <textarea id="notes" rows="2" placeholder="Any special instructions"></textarea>
+          </label>
+          <div class="total-box">
+            <span>Estimated Total</span><strong id="total">Rs. 0</strong>
+          </div>
+          <button class="btn primary full" type="submit">Send Order</button>
+          <p class="small">The button opens WhatsApp with your order details. Add your business WhatsApp number in <b>script.js</b>.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-card">
+        <div><p class="eyebrow">CONTACT</p><h2>Ready to order?</h2><p>Contact Nexora Life Industries for product availability and delivery information.</p></div>
+        <div class="contact-actions">
+          <a class="btn primary" id="waLink" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=nexoralifeindustries@gmail.com&su=Nexora%20Life%20Industries%20Inquiry" target="_blank" rel="noopener">Email Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="brand footer-brand"><span class="brand-mark">NL</span><span><strong>NEXORA <em>LIFE</em></strong><small>INDUSTRIES</small></span></div>
+      <p>© <span id="year"></span> Nexora Life Industries. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
